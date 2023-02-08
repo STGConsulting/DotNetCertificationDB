@@ -8,6 +8,9 @@ While working on the certification, if you want to host the DB in a docker conta
 docker pull ghcr.io/stgconsulting/DotNetCertificationDB:main
 ```
 
-When running the image, select an port that will be exposed externally. SQL Server by default runs on port 1433. If you already have a DB running on port 1433, then you could select another port, like 1446. SSMS can connect to the container DB by using "localhost,1446", the username is SA and the password is "Password123!".
+To Run:
+```
+docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Password123!" -p 1448:1433 --name DotNetCertSQL -h DotNetCertSQL -d ghcr.io/stgconsulting/DotNetCertificationDB:main
+```
 
 Note: The DB is empty, there are no security concerns with sharing the password in this repo.
