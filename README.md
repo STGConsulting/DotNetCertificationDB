@@ -1,6 +1,6 @@
 [![Docker](https://github.com/STGConsulting/DotNetCertificationDB/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/STGConsulting/DotNetCertificationDB/actions/workflows/docker-publish.yml)
 
-# .Net Web Developer Certification DB for Docker
+# .Net Web Developer Certification DB in Docker
 
 While working on the certification, if you want to host the DB in a docker container, then you can pull and run this image:
 
