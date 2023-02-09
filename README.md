@@ -13,4 +13,4 @@ To Run:
 docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Password123!" -p 1448:1433 --name DotNetCertSQL -h DotNetCertSQL -d ghcr.io/stgconsulting/dotnetcertificationdb:main
 ```
 
-Note: The DB is empty, there are no security concerns with sharing the password in this repo.
+Note: This DB/Image is for the certification and demo's. In a production environment, you would not use "Password123!" and you would NOT put the password in the Readme.
